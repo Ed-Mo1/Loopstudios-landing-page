@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./app.css" />
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="absolute top-14 w-full z-10">
+      <div class="container lg:max-w-[1000px] xl:max-w-[1200px]">
+        <nav class="flex justify-between items-center">
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <ul class="md:flex gap-8 hidden">
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Careers</a></li>
+            <li><a href="#" class="nav-link">Events</a></li>
+            <li><a href="#" class="nav-link">Products</a></li>
+            <li><a href="#" class="nav-link">Support</a></li>
+          </ul>
+          <div
+            id="menu-btn"
+            class="nav-menu text-4xl md:hidden text-white cursor-pointer hover:opacity-50 transition-opacity duration-300"
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- menu -->
+    <aside
+      class="h-screen md:hidden w-full absolute bg-black -top-full transition-all duration-1000"
+    >
+      <nav class="h-full container">
+        <ul
+          class="flex text-3xl flex-col justify-center h-full gap-8 text-white"
+        >
+          <li>
+            <a href="#" class="menu-link">About</a>
+          </li>
+          <li><a href="#" class="menu-link">Careers</a></li>
+          <li><a href="#" class="menu-link">Events</a></li>
+          <li><a href="#" class="menu-link">Products</a></li>
+          <li><a href="#" class="menu-link">Support</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- main -->
+    <main>
+      <!-- landing -->
+      <section
+        id="landing-sect"
+        class="h-screen bg-center bg-no-repeat bg-cover"
+        style="
+          background-image: linear-gradient(
+              to right,
+              rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.4)
+            ),
+            url(./images/desktop/image-hero.jpg);
+        "
+      >
+        <div
+          class="container h-full flex justify-center sm:justify-start items-center lg:max-w-[1000px] xl:max-w-[1200px]"
+        >
+          <h1 class="landing-title">
+            Immersive <br class="sm:block hidden" />
+            experiences <br class="sm:block hidden" />
+            that <br class="sm:hidden" />
+            deliver
+          </h1>
+        </div>
+      </section>
+      <!-- vr section -->
+      <section id="vr">
+        <div class="container flex flex-col xl:flex-row lg:max-w-[1000px] xl:max-w-[1200px]">
+          <img
+            src="./images/mobile/image-interactive.jpg"
+            class="max-w-full"
+            alt="vr"
+          />
+          <div
+            class="about grow xl:p-12 text-center xl:text-start bg-white xl:translate-x-[-24%] translate-y-1/3"
+          >
+            <h2
+              class="font-Josefin_Sans text-4xl sm:text-5xl  mb-8 uppercase"
+            >
+              The leader in interactive VR
+            </h2>
+            <p class="font-Alata text-lg">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- creations -->
+      <section id="creations">
+        <div class="container lg:max-w-[1000px] xl:max-w-[1200px]">
+          <section
+            id="head-sect"
+            class="flex justify-center md:justify-between items-center mb-24"
+          >
+            <h3 class="font-Josefin_Sans text-5xl uppercase text-center">
+              Our Creations
+            </h3>
+            <button id="see-btn" class="prev-all-btn hidden md:block">
+              See All
+            </button>
+          </section>
+          <section id="creations-sect" class="creations">
+            <div
+              class="container grid justify-between grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            >
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-deep-earth.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-deep-earth.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+                <h4 class="info-text">
+                  Deep <br />
+                  Earth
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-night-arcade.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-night-arcade.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  Night <br />
+                  Arcade
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-soccer-team.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-soccer-team.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  Soccer <br />
+                  Team vr
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-grid.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-grid.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  The <br />
+                  Grid
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-from-above.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-deep-earth.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  From <br />
+                  Above
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-pocket-borealis.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-pocket-borealis.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  Pocket <br />
+                  Borealis
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-curiosity.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-curiosity.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  The <br />
+                  Curiosity
+                </h4>
+              </div>
+              <div class="creation">
+                <img
+                  src="./images/desktop/image-fisheye.jpg"
+                  class="w-full hidden md:block"
+                  alt="deep earth"
+                />
+                <img
+                  src="./images/mobile/image-fisheye.jpg"
+                  alt="deep earth"
+                  class="w-full md:hidden"
+                />
+
+                <h4 class="info-text">
+                  Make it <br />
+                  Fisheye
+                </h4>
+              </div>
+            </div>
+          </section>
+          <button id="see-btn" class="prev-all-btn mx-auto mt-12 md:hidden">
+            See All
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="bg-black pb-8">
+      <div class="container lg:max-w-[1000px] xl:max-w-[1200px]">
+        <div
+          class="social-links pt-8 flex gap-8 items-center sm:items-start flex-col sm:flex-row sm:justify-between"
+        >
+          <a href="#">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <div class="social flex gap-7 text-3xl text-white">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div
+          class="page-links mt-7 flex gap-8 items-center sm:items-start flex-col sm:flex-row sm:justify-between"
+        >
+          <ul class="flex text-14 flex-col sm:flex-row gap-8 text-white">
+            <li>
+              <a href="#" class="menu-link w-fit">About</a>
+            </li>
+            <li><a href="#" class="menu-link w-fit">Careers</a></li>
+            <li><a href="#" class="menu-link w-fit">Events</a></li>
+            <li><a href="#" class="menu-link w-fit">Products</a></li>
+            <li><a href="#" class="menu-link w-fit">Support</a></li>
+          </ul>
+          <p class="text-Dark_Gray text-center">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
