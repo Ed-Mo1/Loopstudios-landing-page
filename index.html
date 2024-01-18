@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -14,10 +13,10 @@
     <link rel="stylesheet" href="./app.css" />
     <title>Frontend Mentor | Loopstudios landing page</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <!-- nav -->
     <header class="absolute w-full z-10">
-      <div class="header-content pt-14 relative overflow-x-hidden">
+      <div class="header-content pt-14 relative">
         <div class="container">
           <nav class="flex justify-between items-center">
             <a href="#">
@@ -40,7 +39,7 @@
         </div>
         <!-- menu -->
         <aside
-          class="h-screen md:hidden w-screen absolute bg-black top-0 -right-[100vw] transition-all duration-700"
+          class="h-screen md:hidden w-screen fixed bg-black top-0 -right-full transition-all duration-700"
         >
           <nav class="h-full container">
             <ul
@@ -58,7 +57,6 @@
         </aside>
       </div>
     </header>
-
     <!-- main -->
     <main>
       <!-- landing -->

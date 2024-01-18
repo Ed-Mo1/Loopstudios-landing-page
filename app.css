@@ -690,14 +690,17 @@ video {
     line-height: 2.5rem;
   }
 }
+.fixed{
+  position: fixed;
+}
 .absolute{
   position: absolute;
 }
 .relative{
   position: relative;
 }
-.-right-\[100vw\]{
-  right: -100vw;
+.-right-full{
+  right: -100%;
 }
 .top-0{
   top: 0px;
@@ -785,9 +788,6 @@ video {
 }
 .gap-8{
   gap: 2rem;
-}
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 .bg-black{
   --tw-bg-opacity: 1;
