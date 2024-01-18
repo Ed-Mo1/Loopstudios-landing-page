@@ -507,6 +507,8 @@ video {
 
   .container{
     max-width: 640px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 768px){
@@ -519,18 +521,24 @@ video {
 
   .container{
     max-width: 1024px;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 @media (min-width: 1280px){
 
   .container{
     max-width: 1280px;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 @media (min-width: 1536px){
 
   .container{
     max-width: 1536px;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 .nav-link{
@@ -685,14 +693,32 @@ video {
 .absolute{
   position: absolute;
 }
+.relative{
+  position: relative;
+}
 .-top-full{
   top: -100%;
 }
 .top-14{
   top: 3.5rem;
 }
+.-right-full{
+  right: -100%;
+}
+.top-0{
+  top: 0px;
+}
+.-right-\[100vw\]{
+  right: -100vw;
+}
+.right-0{
+  right: 0px;
+}
 .z-10{
   z-index: 10;
+}
+.z-20{
+  z-index: 20;
 }
 .mx-auto{
   margin-left: auto;
@@ -725,15 +751,15 @@ video {
 .h-screen{
   height: 100vh;
 }
-.min-h-\[20vh\]{
-  min-height: 20vh;
-}
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
 }
 .w-full{
   width: 100%;
+}
+.w-screen{
+  width: 100vw;
 }
 .max-w-full{
   max-width: 100%;
@@ -772,6 +798,12 @@ video {
 .gap-8{
   gap: 2rem;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -789,19 +821,17 @@ video {
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-.py-8{
-  padding-top: 2rem;
+.pb-8{
   padding-bottom: 2rem;
 }
 .pt-8{
   padding-top: 2rem;
 }
-.pb-8{
-  padding-bottom: 2rem;
+.pt-1{
+  padding-top: 0.25rem;
+}
+.pt-14{
+  padding-top: 3.5rem;
 }
 .text-center{
   text-align: center;
@@ -854,6 +884,15 @@ video {
 }
 .duration-300{
   transition-duration: 300ms;
+}
+.duration-500{
+  transition-duration: 500ms;
+}
+.duration-700{
+  transition-duration: 700ms;
+}
+.ease-in{
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 main > section {
   padding-block: 8rem;
@@ -916,19 +955,11 @@ main > section {
 }
 @media (min-width: 1024px){
 
-  .lg\:max-w-\[1000px\]{
-    max-width: 1000px;
-  }
-
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 @media (min-width: 1280px){
-
-  .xl\:max-w-\[1200px\]{
-    max-width: 1200px;
-  }
 
   .xl\:translate-x-\[-24\%\]{
     --tw-translate-x: -24%;
